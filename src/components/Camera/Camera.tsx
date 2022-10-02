@@ -77,7 +77,7 @@ export const Camera = React.forwardRef<unknown, CameraProps>(
             context.drawImage(player.current, sX, sY, sW, sH, 0, 0, sW, sH);
           }
 
-          const imgData = canvas.current.toDataURL('image/jpeg');
+          const imgData = canvas.current.toDataURL('image/png');
           return imgData;
         } else {
           throw new Error(errorMessages.canvas);
